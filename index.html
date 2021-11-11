@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/framework.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="modal" id="modal_test">
+        <div class="modal-content">
+            <div class="modal-header">
+              <h5>Agregar Tarea</h5>
+              <button class="btn btn-ligth-clear text-ligth" data-dismiss="#modal_test">X</button>
+            </div>
+            <div class="modal-body">
+                <div>
+                    <label for="username">Titulo</label>
+                    <input type="text" name="username" autocomplete="off">
+                </div>
+                <div>
+                    <label for="username">Descripcion</label>
+                    <input type="text" name="username" autocomplete="off">
+                </div>
+                <div>
+                    <label for="brithday">Fecha de nacimiento</label>
+                    <input type="date" name="brithday">
+                </div>
+            </div>
+            <div class="modal-footer">
+               <button class="btn btn-success">Guardar</button>
+            </div>
+        </div>
+    </div>
+    <div class="modal-content1 bg-info text-ligth">
+        <h1 align="center">Lista de Tareas</h1>
+            <div class="botones bg-ligth text-dark">
+                <div class="view">
+                    <input type="checkbox" name="conditions">
+                    <label for="conditions">Ver todos</label>
+                </div>
+                <button class=" col-2 btn btn-primary" data-toggle="modal" data-target="#modal_test">Nueva</button>
+        </div>
+    </div>
+    <script src="js/framework.js">
+    </script>
+</body>
+</html>
